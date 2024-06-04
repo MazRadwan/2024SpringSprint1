@@ -64,6 +64,8 @@ function initializeApplication() {
   switch (myArgs[1]) {
     case "--all":
       if (DEBUG) console.log("--all createFolders() & createFiles()");
+      createFolders();
+      createFiles();
       break;
     case "--cat":
       if (DEBUG) console.log("--cat createFiles()");
